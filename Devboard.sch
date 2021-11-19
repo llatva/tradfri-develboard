@@ -305,8 +305,6 @@ Text Label 6500 3150 2    60   ~ 0
 SWCLK
 Text Label 6500 3250 2    60   ~ 0
 SWO
-Text Notes 3650 750  0    60   ~ 12
-UNTESTED
 Wire Wire Line
 	6050 3250 6500 3250
 Wire Wire Line
@@ -424,7 +422,7 @@ L Mechanical:MountingHole_Pad H1
 U 1 1 60958494
 P 2700 4250
 F 0 "H1" H 2800 4299 50  0000 L CNN
-F 1 "MountingHole_Pad" H 2800 4208 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2800 4208 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 2700 4250 50  0001 C CNN
 F 3 "~" H 2700 4250 50  0001 C CNN
 	1    2700 4250
@@ -435,7 +433,7 @@ L Mechanical:MountingHole_Pad H2
 U 1 1 60958FA6
 P 2700 4550
 F 0 "H2" H 2800 4599 50  0000 L CNN
-F 1 "MountingHole_Pad" H 2800 4508 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2800 4508 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 2700 4550 50  0001 C CNN
 F 3 "~" H 2700 4550 50  0001 C CNN
 	1    2700 4550
@@ -446,7 +444,7 @@ L Mechanical:MountingHole_Pad H3
 U 1 1 609670D6
 P 2700 4850
 F 0 "H3" H 2800 4899 50  0000 L CNN
-F 1 "MountingHole_Pad" H 2800 4808 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2800 4808 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 2700 4850 50  0001 C CNN
 F 3 "~" H 2700 4850 50  0001 C CNN
 	1    2700 4850
@@ -457,7 +455,7 @@ L Mechanical:MountingHole_Pad H4
 U 1 1 6096733E
 P 2700 5150
 F 0 "H4" H 2800 5199 50  0000 L CNN
-F 1 "MountingHole_Pad" H 2800 5108 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2800 5108 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 2700 5150 50  0001 C CNN
 F 3 "~" H 2700 5150 50  0001 C CNN
 	1    2700 5150
@@ -499,32 +497,32 @@ $EndComp
 $Comp
 L Devboard-rescue:C C4
 U 1 1 6097B587
-P 7400 2550
-F 0 "C4" H 7425 2650 50  0000 L CNN
-F 1 "100n" H 7425 2450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7438 2400 50  0001 C CNN
-F 3 "" H 7400 2550 50  0001 C CNN
-	1    7400 2550
+P 7550 2550
+F 0 "C4" H 7575 2650 50  0000 L CNN
+F 1 "100n" H 7575 2450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7588 2400 50  0001 C CNN
+F 3 "" H 7550 2550 50  0001 C CNN
+	1    7550 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 2400 7250 2400
+	7200 2400 7300 2400
 Connection ~ 6200 2700
 Connection ~ 6900 2700
 Wire Wire Line
-	6900 2700 7400 2700
+	6900 2700 7550 2700
 $Comp
 L Devboard-rescue:+3V3 #PWR0102
 U 1 1 609894C4
-P 7400 2400
-F 0 "#PWR0102" H 7400 2250 50  0001 C CNN
-F 1 "+3V3" H 7400 2540 50  0000 C CNN
-F 2 "" H 7400 2400 50  0001 C CNN
-F 3 "" H 7400 2400 50  0001 C CNN
-	1    7400 2400
+P 7550 2400
+F 0 "#PWR0102" H 7550 2250 50  0001 C CNN
+F 1 "+3V3" H 7550 2540 50  0000 C CNN
+F 2 "" H 7550 2400 50  0001 C CNN
+F 3 "" H 7550 2400 50  0001 C CNN
+	1    7550 2400
 	1    0    0    -1  
 $EndComp
-Connection ~ 7400 2400
+Connection ~ 7550 2400
 Wire Wire Line
 	6100 2650 6200 2700
 $Comp
@@ -543,8 +541,8 @@ Wire Wire Line
 Wire Wire Line
 	6100 2400 6100 2450
 Connection ~ 6200 2400
-Text Notes 950  4000 0    118  ~ 24
-https://www.instructables.com/Zigbee-LED-Strip-Dimmer-IKEA-Hack/
+Text Notes 3700 4600 0    40   ~ 8
+Based on work by basilfx@github, see: https://github.com/basilfx/TRADFRI-Hacking\nLicense: Creative Commons BY Attribution 4.0 International\n\nSee also: https://www.instructables.com/Zigbee-LED-Strip-Dimmer-IKEA-Hack/
 $Comp
 L Devboard-rescue:CP C5
 U 1 1 60A05E3C
@@ -585,26 +583,23 @@ Connection ~ 5900 2450
 $Comp
 L Diode:1.5KExxA D2
 U 1 1 60A825BC
-P 7250 2250
-F 0 "D2" V 7296 2170 50  0000 R CNN
-F 1 "1.5KExxA" V 7205 2170 50  0000 R CNN
-F 2 "Diode_SMD:D_SMB_Handsoldering" H 7250 2050 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 7200 2250 50  0001 C CNN
-	1    7250 2250
+P 7300 2000
+F 0 "D2" V 7346 1920 50  0000 R CNN
+F 1 "1.5KExxA" V 7255 1920 50  0000 R CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 7300 1800 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88301/15ke.pdf" H 7250 2000 50  0001 C CNN
+	1    7300 2000
 	0    -1   -1   0   
 $EndComp
-Connection ~ 7250 2400
-Wire Wire Line
-	7250 2400 7400 2400
 $Comp
 L Devboard-rescue:GND #PWR0104
 U 1 1 60A83B7F
-P 7250 2100
-F 0 "#PWR0104" H 7250 1850 50  0001 C CNN
-F 1 "GND" H 7250 1950 50  0000 C CNN
-F 2 "" H 7250 2100 50  0001 C CNN
-F 3 "" H 7250 2100 50  0001 C CNN
-	1    7250 2100
+P 7300 1850
+F 0 "#PWR0104" H 7300 1600 50  0001 C CNN
+F 1 "GND" H 7300 1700 50  0000 C CNN
+F 2 "" H 7300 1850 50  0001 C CNN
+F 3 "" H 7300 1850 50  0001 C CNN
+	1    7300 1850
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -624,8 +619,8 @@ $Comp
 L Device:Polyfuse_Small F2
 U 1 1 60A6BA34
 P 950 2650
-F 0 "F2" V 745 2650 50  0000 C CNN
-F 1 "Polyfuse_Small" V 836 2650 50  0000 C CNN
+F 0 "F2" V 850 2650 50  0000 C CNN
+F 1 "Polyfuse_Small" V 1100 2650 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 1000 2450 50  0001 L CNN
 F 3 "~" H 950 2650 50  0001 C CNN
 	1    950  2650
@@ -724,27 +719,27 @@ Connection ~ 2000 1550
 $Comp
 L Devboard-rescue:Conn_01x02 J8
 U 1 1 60AEAEA6
-P 6700 1950
-F 0 "J8" H 6700 2050 50  0000 C CNN
-F 1 "Power" H 6700 1750 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6700 1950 50  0001 C CNN
-F 3 "" H 6700 1950 50  0001 C CNN
-	1    6700 1950
+P 6700 1850
+F 0 "J8" H 6700 1950 50  0000 C CNN
+F 1 "Power" H 6700 1650 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6700 1850 50  0001 C CNN
+F 3 "" H 6700 1850 50  0001 C CNN
+	1    6700 1850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Devboard-rescue:GND #PWR0107
 U 1 1 60AF08D3
-P 6500 2050
-F 0 "#PWR0107" H 6500 1800 50  0001 C CNN
-F 1 "GND" H 6500 1900 50  0000 C CNN
-F 2 "" H 6500 2050 50  0001 C CNN
-F 3 "" H 6500 2050 50  0001 C CNN
-	1    6500 2050
+P 6500 1950
+F 0 "#PWR0107" H 6500 1700 50  0001 C CNN
+F 1 "GND" H 6500 1800 50  0000 C CNN
+F 2 "" H 6500 1950 50  0001 C CNN
+F 3 "" H 6500 1950 50  0001 C CNN
+	1    6500 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 1950 6350 1950
+	6500 1850 6350 1950
 Wire Wire Line
 	6350 1950 6350 2250
 Wire Wire Line
@@ -755,8 +750,8 @@ $Comp
 L Connector:Screw_Terminal_01x02 J6
 U 1 1 6097D02D
 P 700 2300
-F 0 "J6" H 618 1975 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 618 2066 50  0000 C CNN
+F 0 "J6" H 700 2100 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 618 2066 50  0001 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 700 2300 50  0001 C CNN
 F 3 "~" H 700 2300 50  0001 C CNN
 	1    700  2300
@@ -825,7 +820,7 @@ F 3 "" H 850 2650 50  0001 C CNN
 	1    850  2650
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1250 2650 2    50   Input ~ 0
+Text GLabel 1400 2650 2    50   Input ~ 0
 LED_ANODE
 $Comp
 L Devboard-rescue:Conn_01x02 J9
@@ -899,8 +894,6 @@ Wire Wire Line
 	5300 1950 5450 1950
 Wire Wire Line
 	4450 1850 5050 1850
-Wire Wire Line
-	4450 1550 5050 1550
 $Comp
 L Connector:Screw_Terminal_01x04 J10
 U 1 1 60A97037
@@ -912,9 +905,6 @@ F 3 "~" H 4850 1850 50  0001 C CNN
 	1    4850 1850
 	-1   0    0    1   
 $EndComp
-Connection ~ 5050 1550
-Wire Wire Line
-	5050 1550 5450 1550
 Connection ~ 5050 1650
 Wire Wire Line
 	5050 1650 5450 1650
@@ -927,17 +917,12 @@ Wire Wire Line
 Connection ~ 5050 1950
 Wire Wire Line
 	5050 1950 5300 1950
-Wire Wire Line
-	4450 1450 5050 1450
-Connection ~ 5050 1450
-Wire Wire Line
-	5050 1450 5450 1450
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 60AD8E86
 P 2550 4350
 F 0 "JP1" H 2550 4555 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2550 4464 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 2550 4464 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2550 4350 50  0001 C CNN
 F 3 "~" H 2550 4350 50  0001 C CNN
 	1    2550 4350
@@ -948,7 +933,7 @@ L Jumper:SolderJumper_2_Open JP2
 U 1 1 60AD9B78
 P 2550 4650
 F 0 "JP2" H 2550 4855 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2550 4764 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 2550 4764 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2550 4650 50  0001 C CNN
 F 3 "~" H 2550 4650 50  0001 C CNN
 	1    2550 4650
@@ -959,7 +944,7 @@ L Jumper:SolderJumper_2_Open JP3
 U 1 1 60AD9F25
 P 2550 4950
 F 0 "JP3" H 2550 5155 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2550 5064 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 2550 5064 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2550 4950 50  0001 C CNN
 F 3 "~" H 2550 4950 50  0001 C CNN
 	1    2550 4950
@@ -970,10 +955,29 @@ L Jumper:SolderJumper_2_Open JP4
 U 1 1 60ADA596
 P 2550 5250
 F 0 "JP4" H 2550 5455 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2550 5364 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 2550 5364 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2550 5250 50  0001 C CNN
 F 3 "~" H 2550 5250 50  0001 C CNN
 	1    2550 5250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4450 1550 5450 1550
+Wire Wire Line
+	4450 1450 5450 1450
+Text Notes 3700 4300 0    79   ~ 16
+Tradfri unofficial development board with MOSFET output
+Wire Wire Line
+	7300 2400 7300 2150
+Connection ~ 7300 2400
+Wire Wire Line
+	7300 2400 7550 2400
+Wire Wire Line
+	1400 2650 1250 2650
+Text Notes 7250 5200 0    55   ~ 11
+A
+Text Notes 4000 5050 0    55   ~ 11
+Tradfri-evalboard-develboard
+Text Notes 5500 4850 0    50   ~ 10
+This content is not affiliated with IKEA of Sweden AB.
 $EndSCHEMATC
