@@ -975,7 +975,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 2650 1250 2650
 Text Notes 7250 5200 0    55   ~ 11
-A
+B
 Text Notes 4000 5050 0    55   ~ 11
 Tradfri-evalboard-develboard
 Text Notes 5500 4850 0    50   ~ 10
