@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name IKEA)(type KiCad)(uri "$(KIPRJMOD)/IKEA.pretty")(options "")(descr ""))
+)

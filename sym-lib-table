@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Devboard-rescue)(type Legacy)(uri ${KIPRJMOD}/Devboard-rescue.lib)(options "")(descr ""))
+  (lib (name irf7101)(type Legacy)(uri ${KIPRJMOD}/irf7101.lib)(options "")(descr ""))
+)

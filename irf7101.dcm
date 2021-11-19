@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRF7101
+D dual N-channel HEXFET Power MOSFET 20V 3.5A SO8
+K Dual N-Channel MOSFET
+F https://www.infineon.com/dgdl/irf7101pbf.pdf
+$ENDCMP
+#
+$CMP IRL6297SD
+D 15A Id, 20V Vds, 4.9mOhm Rds, Dual N-Channel HEXFET Power MOSFET, DirectFET SA
+K Dual N-Channel HEXFET MOSFET Logic-Level
+F https://www.infineon.com/dgdl/irl6297sdpbf.pdf?fileId=5546d462533600a40153565ff22f2575
+$ENDCMP
+#
+#End Doc Library
